@@ -17,45 +17,26 @@ UnitBlueprint {
         },
     },
     Categories = {
-        'CYBRAN',
+        'Cybran',
         'STRUCTURE',
         'CIVILIAN',
         'SELECTABLE',
         'LAND',
         'VISIBLETORECON',
         'RECLAIMABLE',
+        'UNTARGETABLE',
     },
     CollisionOffsetX = 0,
     CollisionOffsetY = 0,
     CollisionOffsetZ = 0,
     Defense = {
         ArmorType = 'Normal',
-        Health = 1100,
-        MaxHealth = 1100,
-        RegenRate = 5,
+        Health = 6400,
+        MaxHealth = 6400,
+        RegenRate = 0,
     },
-    Description = '<LOC urc1301_desc>Cybran Administrative Structure',
+    Description = '<LOC xrc1502_desc>PoW Facility',
     Display = {
-        DamageEffects = {
-            {
-                Bone = 0,
-                OffsetX = 0,
-                OffsetY = 4.6,
-                OffsetZ = 0.25,
-            },
-            {
-                Bone = 0,
-                OffsetX = 0.25,
-                OffsetY = 2,
-                OffsetZ = -0.5,
-            },
-            {
-                Bone = 0,
-                OffsetX = -0.5,
-                OffsetY = 1.5,
-                OffsetZ = 0.5,
-            },
-        },
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
@@ -65,14 +46,14 @@ UnitBlueprint {
                     ShaderName = 'Insect',
                 },
                 {
-                    AlbedoName = 'urc1301_lod1_albedo.dds',
+                    AlbedoName = 'xrc1502_lod1_albedo.dds',
                     LODCutoff = 300,
                     ShaderName = 'Insect',
-                    SpecularName = 'urc1301_lod1_specteam.dds',
+                    SpecularName = 'xrc1502_lod1_specteam.dds',
                 },
             },
         },
-        PlaceholderMeshName = 'URC1301',
+        PlaceholderMeshName = 'XRC1502',
         SpawnRandomRotation = true,
         Tarmacs = {
             {
@@ -93,9 +74,9 @@ UnitBlueprint {
         UniformScale = 0.1,
     },
     Economy = {
-        BuildCostEnergy = 50,
-        BuildCostMass = 50,
-        BuildTime = 50,
+        BuildCostEnergy = 3000,
+        BuildCostMass = 100,
+        BuildTime = 230,
     },
     Footprint = {
         SizeX = 3,
@@ -125,11 +106,11 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Interface = {
-        HelpText = '<LOC urc1301_help>Cybran Civilian Structure',
+        HelpText = '<LOC xrc1502_help>Cybran Civilian Structure',
     },
     LifeBarHeight = 0.075,
-    LifeBarOffset = 1.2,
-    LifeBarSize = 3.25,
+    LifeBarOffset = 0.95,
+    LifeBarSize = 2.5,
     Physics = {
         BankingSlope = 0,
         BuildOnLayerCaps = {
@@ -154,13 +135,14 @@ UnitBlueprint {
         SkirtSizeZ = 6,
         TurnRate = 0,
     },
-    SelectionCenterOffsetZ = -0.5,
     SelectionSizeX = 1.55,
     SelectionSizeZ = 1.55,
     SelectionThickness = 0.45,
-    SizeX = 2,
-    SizeY = 3.5,
-    SizeZ = 2,
+
+    # height
+    SizeX = 2.5,
+    SizeY = 0.8,
+    SizeZ = 2.5,
     StrategicIconName = 'icon_structure_generic',
     StrategicIconSortPriority = 207,
     Wreckage = {
